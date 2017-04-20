@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -3245,6 +3245,17 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="SWITCH-SPDT">
+<wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="51"/>
+<wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="51"/>
+<wire x1="2.175" y1="-5.815" x2="2.175" y2="5.815" width="0.2032" layer="51"/>
+<wire x1="2.175" y1="5.815" x2="-2.175" y2="5.815" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.54" drill="1.016" diameter="1.8796"/>
+<text x="-3.81" y="-9.525" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="7.62" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -3271,6 +3282,19 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="TOGGLE">
+<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
+<pin name="O" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-1.905" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3361,6 +3385,28 @@ Source: www.kingbright.com</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH-SPDT" prefix="S" uservalue="yes">
+<description>&lt;b&gt;SPDT Switch&lt;/b&gt;&lt;br&gt;
+Simple slide switch, Spark Fun Electronics SKU : COM-00102&lt;br&gt;
+DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
+<gates>
+<gate name="1" symbol="TOGGLE" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="SWITCH-SPDT">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08261"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3542,7 +3588,7 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="CS_M" pad="8"/>
 <connect gate="G$1" pin="DEN_A/G" pad="13"/>
 <connect gate="G$1" pin="DRDY_M" pad="9"/>
-<connect gate="G$1" pin="GND" pad="19"/>
+<connect gate="G$1" pin="GND" pad="14 15 16 17 18 19 20"/>
 <connect gate="G$1" pin="INT1_A/G" pad="11"/>
 <connect gate="G$1" pin="INT2_A/G" pad="12"/>
 <connect gate="G$1" pin="INT_M" pad="10"/>
@@ -3550,8 +3596,8 @@ Source: www.kingbright.com</description>
 <connect gate="G$1" pin="SDA/SDA/SDO" pad="4"/>
 <connect gate="G$1" pin="SDO_A/G" pad="5"/>
 <connect gate="G$1" pin="SDO_M" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="22"/>
-<connect gate="G$1" pin="VDDIO" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="22 23"/>
+<connect gate="G$1" pin="VDDIO" pad="1 3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3745,6 +3791,7 @@ Source: www.kingbright.com</description>
 <part name="JP2" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="PTH"/>
 <part name="GND28" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C15" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="S1" library="Lab5" deviceset="SWITCH-SPDT" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -3795,6 +3842,7 @@ We'll test it before actually comitting to it</text>
 <text x="212.09" y="-24.13" size="2.54" layer="97" font="vector">Buttons</text>
 <text x="214.63" y="-68.58" size="1.27" layer="97" font="vector">They tend to come in handy</text>
 <text x="46.99" y="-234.95" size="1.27" layer="97" font="vector">Is the addressing correct?</text>
+<text x="10.16" y="-76.2" size="1.27" layer="97" font="vector">How could we use this to have a power toggle?</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="217.17" y="-156.21" rot="MR0"/>
@@ -3894,6 +3942,7 @@ We'll test it before actually comitting to it</text>
 <instance part="JP2" gate="G$1" x="111.76" y="-54.61" rot="MR180"/>
 <instance part="GND28" gate="1" x="125.73" y="-67.31"/>
 <instance part="C15" gate="G$1" x="128.27" y="-44.45"/>
+<instance part="S1" gate="1" x="25.4" y="-68.58"/>
 </instances>
 <busses>
 </busses>
@@ -4390,10 +4439,8 @@ We'll test it before actually comitting to it</text>
 <wire x1="30.48" y1="-30.48" x2="30.48" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-38.1" x2="30.48" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-38.1" x2="22.86" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-38.1" x2="22.86" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-38.1" x2="22.86" y2="-45.72" width="0.1524" layer="91"/>
 <junction x="30.48" y="-38.1"/>
-<pinref part="U$6" gate="G$1" pin="EN"/>
-<wire x1="22.86" y1="-55.88" x2="30.48" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-38.1" x2="35.56" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="30.48" y="-38.1"/>
 <label x="35.56" y="-38.1" size="1.27" layer="95" font="fixed" xref="yes"/>
@@ -4401,6 +4448,12 @@ We'll test it before actually comitting to it</text>
 <wire x1="40.64" y1="-30.48" x2="40.64" y2="-25.4" width="0.1524" layer="91" style="longdash"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="-25.4" x2="40.64" y2="-25.4" width="0.1524" layer="91" style="longdash"/>
+<wire x1="22.86" y1="-45.72" x2="17.78" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-45.72" x2="17.78" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-58.42" x2="27.94" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-58.42" x2="27.94" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="EN"/>
+<wire x1="27.94" y1="-55.88" x2="30.48" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="373.38" y="-177.8" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
