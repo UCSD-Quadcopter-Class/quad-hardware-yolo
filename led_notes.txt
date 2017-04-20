@@ -1,0 +1,10 @@
+We did not create an LEDs.lbr file.
+We did create a variant for the LED Device made from the last lab.
+
+The variant was for the following Yellow LED:
+
+Digikey Link -
+https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMD17-21VYD-TR8/L62507CT-ND/254935
+
+Datasheet - 
+https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf
