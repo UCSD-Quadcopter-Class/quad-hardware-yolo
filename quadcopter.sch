@@ -3229,22 +3229,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <description>Generated from &lt;b&gt;StartingPoint.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
 <packages>
-<package name="CHIP-LED0805">
-<description>&lt;b&gt;Hyper CHIPLED Hyper-Bright LED&lt;/b&gt;&lt;p&gt;
-LB R99A&lt;br&gt;
-Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
-<wire x1="-0.625" y1="0.45" x2="-0.625" y2="-0.45" width="0.1016" layer="51"/>
-<wire x1="0.625" y1="0.45" x2="0.625" y2="-0.475" width="0.1016" layer="51"/>
-<rectangle x1="-0.15" y1="0" x2="0.15" y2="0.3" layer="21"/>
-<rectangle x1="-0.675" y1="-1.05" x2="0.675" y2="-0.45" layer="51"/>
-<rectangle x1="-0.675" y1="0" x2="-0.525" y2="0.3" layer="21"/>
-<rectangle x1="-0.675" y1="0.45" x2="0.675" y2="1.05" layer="51"/>
-<rectangle x1="0.525" y1="0" x2="0.675" y2="0.3" layer="21"/>
-<smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
-<smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 <package name="SWITCH-SPDT">
 <wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="51"/>
 <wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="51"/>
@@ -3258,31 +3242,6 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="LED">
-<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="-2.159"/>
-<vertex x="-3.048" y="-1.27"/>
-<vertex x="-2.54" y="-1.778"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-3.302"/>
-<vertex x="-2.921" y="-2.413"/>
-<vertex x="-2.413" y="-2.921"/>
-</polygon>
-</symbol>
 <symbol name="TOGGLE">
 <circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
 <circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
@@ -3298,97 +3257,6 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED" prefix="LED" uservalue="yes">
-<description>&lt;b&gt;LED&lt;/b&gt;&lt;p&gt;
-&lt;u&gt;OSRAM&lt;/u&gt;:&lt;br&gt;
-
-- &lt;u&gt;CHIPLED&lt;/u&gt;&lt;br&gt;
-LG R971, LG N971, LY N971, LG Q971, LY Q971, LO R971, LY R971
-LH N974, LH R974&lt;br&gt;
-LS Q976, LO Q976, LY Q976&lt;br&gt;
-LO Q996&lt;br&gt;
-
-- &lt;u&gt;Hyper CHIPLED&lt;/u&gt;&lt;br&gt;
-LW Q18S&lt;br&gt;
-LB Q993, LB Q99A, LB R99A&lt;br&gt;
-
-- &lt;u&gt;SideLED&lt;/u&gt;&lt;br&gt;
-LS A670, LO A670, LY A670, LG A670, LP A670&lt;br&gt;
-LB A673, LV A673, LT A673, LW A673&lt;br&gt;
-LH A674&lt;br&gt;
-LY A675&lt;br&gt;
-LS A676, LA A676, LO A676, LY A676, LW A676&lt;br&gt;
-LS A679, LY A679, LG A679&lt;br&gt;
-
--  &lt;u&gt;Hyper Micro SIDELED®&lt;/u&gt;&lt;br&gt;
-LS Y876, LA Y876, LO Y876, LY Y876&lt;br&gt;
-LT Y87S&lt;br&gt;
-
-- &lt;u&gt;SmartLED&lt;/u&gt;&lt;br&gt;
-LW L88C, LW L88S&lt;br&gt;
-LB L89C, LB L89S, LG L890&lt;br&gt;
-LS L89K, LO L89K, LY L89K&lt;br&gt;
-LS L896, LA L896, LO L896, LY L896&lt;br&gt;
-
-- &lt;u&gt;TOPLED&lt;/u&gt;&lt;br&gt;
-LS T670, LO T670, LY T670, LG T670, LP T670&lt;br&gt;
-LSG T670, LSP T670, LSY T670, LOP T670, LYG T670&lt;br&gt;
-LG T671, LOG T671, LSG T671&lt;br&gt;
-LB T673, LV T673, LT T673, LW T673&lt;br&gt;
-LH T674&lt;br&gt;
-LS T676, LA T676, LO T676, LY T676, LB T676, LH T676, LSB T676, LW T676&lt;br&gt;
-LB T67C, LV T67C, LT T67C, LS T67K, LO T67K, LY T67K, LW E67C&lt;br&gt;
-LS E67B, LA E67B, LO E67B, LY E67B, LB E67C, LV E67C, LT E67C&lt;br&gt;
-LW T67C&lt;br&gt;
-LS T679, LY T679, LG T679&lt;br&gt;
-LS T770, LO T770, LY T770, LG T770, LP T770&lt;br&gt;
-LB T773, LV T773, LT T773, LW T773&lt;br&gt;
-LH T774&lt;br&gt;
-LS E675, LA E675, LY E675, LS T675&lt;br&gt;
-LS T776, LA T776, LO T776, LY T776, LB T776&lt;br&gt;
-LHGB T686&lt;br&gt;
-LT T68C, LB T68C&lt;br&gt;
-
-- &lt;u&gt;Hyper Mini TOPLED®&lt;/u&gt;&lt;br&gt;
-LB M676&lt;br&gt;
-
-- &lt;u&gt;Mini TOPLED Santana®&lt;/u&gt;&lt;br&gt;
-LG M470&lt;br&gt;
-LS M47K, LO M47K, LY M47K
-&lt;p&gt;
-Source: http://www.osram.convergy.de&lt;p&gt;
-
-&lt;u&gt;LUXEON:&lt;/u&gt;&lt;br&gt;
-- &lt;u&gt;LUMILED®&lt;/u&gt;&lt;br&gt;
-LXK2-PW12-R00, LXK2-PW12-S00, LXK2-PW14-U00, LXK2-PW14-V00&lt;br&gt;
-LXK2-PM12-R00, LXK2-PM12-S00, LXK2-PM14-U00&lt;br&gt;
-LXK2-PE12-Q00, LXK2-PE12-R00, LXK2-PE12-S00, LXK2-PE14-T00, LXK2-PE14-U00&lt;br&gt;
-LXK2-PB12-K00, LXK2-PB12-L00, LXK2-PB12-M00, LXK2-PB14-N00, LXK2-PB14-P00, LXK2-PB14-Q00&lt;br&gt;
-LXK2-PR12-L00, LXK2-PR12-M00, LXK2-PR14-Q00, LXK2-PR14-R00&lt;br&gt;
-LXK2-PD12-Q00, LXK2-PD12-R00, LXK2-PD12-S00&lt;br&gt;
-LXK2-PH12-R00, LXK2-PH12-S00&lt;br&gt;
-LXK2-PL12-P00, LXK2-PL12-Q00, LXK2-PL12-R00
-&lt;p&gt;
-Source: www.luxeon.com&lt;p&gt;
-
-&lt;u&gt;KINGBRIGHT:&lt;/U&gt;&lt;p&gt;
-KA-3528ASYC&lt;br&gt;
-Source: www.kingbright.com</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="CHIP-LED0805" package="CHIP-LED0805">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SWITCH-SPDT" prefix="S" uservalue="yes">
 <description>&lt;b&gt;SPDT Switch&lt;/b&gt;&lt;br&gt;
 Simple slide switch, Spark Fun Electronics SKU : COM-00102&lt;br&gt;
@@ -3519,6 +3387,19 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <rectangle x1="-1.9" y1="-1.7" x2="1.9" y2="1.7" layer="39"/>
 <text x="-2.3" y="-3.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="LED_LTST-C170EKT">
+<smd name="A" x="1.1" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="C" x="-1.1" y="0" dx="1.2" dy="1.2" layer="1"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.1" layer="21"/>
+<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.1" layer="21"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.1" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.1" layer="21"/>
+<dimension x1="-1.65" y1="-1.65" x2="1.65" y2="-1.65" x3="0" y3="-1.65" textsize="1.27" layer="48"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="3.81" y="1.27" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="39"/>
+<circle x="-0.9" y="0.9" radius="0.1" width="0.05" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IMU_LSM9DS1TR">
@@ -3572,6 +3453,33 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LED">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="4.826" y2="2.794" width="0.254" layer="94"/>
+<wire x1="4.826" y1="2.794" x2="5.588" y2="3.048" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.334" y2="2.286" width="0.254" layer="94"/>
+<wire x1="5.334" y1="2.286" x2="5.588" y2="3.048" width="0.254" layer="94"/>
+<wire x1="6.096" y1="2.794" x2="6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="6.604" y2="2.286" width="0.254" layer="94"/>
+<wire x1="6.604" y1="2.286" x2="6.858" y2="3.048" width="0.254" layer="94"/>
+<wire x1="6.858" y1="3.048" x2="6.096" y2="2.794" width="0.254" layer="94"/>
+<pin name="C" x="-5.08" y="0" length="point" rot="R180"/>
+<pin name="A" x="5.08" y="0" length="point"/>
+<wire x1="-3.556" y1="-0.762" x2="-3.556" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.016" x2="-3.302" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="3.302" y1="-1.016" x2="3.556" y2="-1.016" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="0.88" layer="95" font="vector">&gt;NAME</text>
+<text x="0" y="3.81" size="0.88" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3652,6 +3560,29 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LED" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-RED" package="LED_LTST-C170EKT">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Michael M. Gonzalez"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="160-1178-1-ND "/>
+<attribute name="MFR" value="Lite-On Inc"/>
+<attribute name="MPN" value="LTST-C170EKT"/>
+<attribute name="REVIEWER" value=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Components">
@@ -3716,8 +3647,6 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="GND6" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-330" value="330"/>
 <part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-330" value="330"/>
-<part name="LED1" library="Lab5" deviceset="LED" device="CHIP-LED0805"/>
-<part name="LED2" library="Lab5" deviceset="LED" device="CHIP-LED0805"/>
 <part name="GND7" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND8" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND9" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -3792,6 +3721,8 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="GND28" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C15" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="S1" library="Lab5" deviceset="SWITCH-SPDT" device="PTH"/>
+<part name="U$13" library="quadparts_michael" deviceset="LED" device="-RED"/>
+<part name="U$14" library="quadparts_michael" deviceset="LED" device="-RED"/>
 </parts>
 <sheets>
 <sheet>
@@ -3867,8 +3798,6 @@ We'll test it before actually comitting to it</text>
 <instance part="GND6" gate="1" x="214.63" y="-107.95"/>
 <instance part="R1" gate="G$1" x="166.37" y="-128.27"/>
 <instance part="R2" gate="G$1" x="166.37" y="-135.89"/>
-<instance part="LED1" gate="G$1" x="146.05" y="-128.27" rot="R270"/>
-<instance part="LED2" gate="G$1" x="146.05" y="-135.89" rot="R270"/>
 <instance part="GND7" gate="1" x="130.81" y="-128.27" rot="R270"/>
 <instance part="GND8" gate="1" x="130.81" y="-135.89" rot="R270"/>
 <instance part="GND9" gate="1" x="255.27" y="-128.27" rot="R90"/>
@@ -3943,6 +3872,8 @@ We'll test it before actually comitting to it</text>
 <instance part="GND28" gate="1" x="125.73" y="-67.31"/>
 <instance part="C15" gate="G$1" x="128.27" y="-44.45"/>
 <instance part="S1" gate="1" x="25.4" y="-68.58"/>
+<instance part="U$13" gate="G$1" x="154.94" y="-127" rot="R180"/>
+<instance part="U$14" gate="G$1" x="154.94" y="-134.62" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3983,16 +3914,6 @@ We'll test it before actually comitting to it</text>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="207.01" y1="-102.87" x2="207.01" y2="-105.41" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="140.97" y1="-128.27" x2="133.35" y2="-128.27" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="140.97" y1="-135.89" x2="133.35" y2="-135.89" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="TST"/>
@@ -4107,6 +4028,18 @@ We'll test it before actually comitting to it</text>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="116.84" y1="-62.23" x2="125.73" y2="-62.23" width="0.1524" layer="91"/>
 <wire x1="125.73" y1="-62.23" x2="125.73" y2="-64.77" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="A"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="149.86" y1="-134.62" x2="133.35" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="-134.62" x2="133.35" y2="-135.89" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="U$13" gate="G$1" pin="A"/>
+<wire x1="133.35" y1="-128.27" x2="149.86" y2="-128.27" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-128.27" x2="149.86" y2="-127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFP" class="0">
@@ -4239,20 +4172,6 @@ We'll test it before actually comitting to it</text>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="171.45" y1="-128.27" x2="176.53" y2="-128.27" width="0.1524" layer="91"/>
 <wire x1="176.53" y1="-128.27" x2="176.53" y2="-130.81" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="161.29" y1="-128.27" x2="148.59" y2="-128.27" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="161.29" y1="-135.89" x2="148.59" y2="-135.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -4830,6 +4749,22 @@ We'll test it before actually comitting to it</text>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="-49.53" x2="128.27" y2="-49.53" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$13" gate="G$1" pin="C"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="-127" x2="161.29" y2="-127" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="-127" x2="161.29" y2="-128.27" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$14" gate="G$1" pin="C"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="-134.62" x2="161.29" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="-134.62" x2="161.29" y2="-135.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
