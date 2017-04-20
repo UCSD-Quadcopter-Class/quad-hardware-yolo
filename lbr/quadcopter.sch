@@ -3291,8 +3291,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <smd name="P$1" x="-0.5" y="0" dx="1.27" dy="0.635" layer="1" rot="R270" stop="no"/>
 <smd name="P$2" x="0.5" y="0" dx="1.27" dy="0.635" layer="1" rot="R90" stop="no"/>
 <wire x1="-0.5" y1="0" x2="0.5" y2="0" width="1" layer="1"/>
-<text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
-<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="39"/>
 </package>
 <package name="N_FET_SI2302CDS-T1-E3CT-ND">
 <smd name="D" x="1.346" y="0" dx="0.559" dy="0.724" layer="1" rot="R270"/>
@@ -3375,7 +3373,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pin name="P$1" x="-2.54" y="0" length="point" function="dot" rot="R90"/>
 <pin name="P$2" x="0" y="0" length="point" function="dot" rot="R90"/>
 <wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="-5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="N-FET">
 <wire x1="2.54" y1="-1.27" x2="2.286" y2="-1.27" width="0.254" layer="94"/>
@@ -3402,31 +3399,31 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LED">
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="6.35" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="4.826" y2="2.794" width="0.254" layer="94"/>
-<wire x1="4.826" y1="2.794" x2="5.588" y2="3.048" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.334" y2="2.286" width="0.254" layer="94"/>
-<wire x1="5.334" y1="2.286" x2="5.588" y2="3.048" width="0.254" layer="94"/>
-<wire x1="6.096" y1="2.794" x2="6.35" y2="2.54" width="0.254" layer="94"/>
-<wire x1="6.35" y1="2.54" x2="6.604" y2="2.286" width="0.254" layer="94"/>
-<wire x1="6.604" y1="2.286" x2="6.858" y2="3.048" width="0.254" layer="94"/>
-<wire x1="6.858" y1="3.048" x2="6.096" y2="2.794" width="0.254" layer="94"/>
-<pin name="C" x="-5.08" y="0" length="point" rot="R180"/>
-<pin name="A" x="5.08" y="0" length="point"/>
-<wire x1="-3.556" y1="-0.762" x2="-3.556" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-1.016" x2="-3.302" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="3.302" y1="-1.016" x2="3.556" y2="-1.016" width="0.254" layer="94"/>
-<text x="0" y="5.08" size="0.88" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="3.81" size="0.88" layer="96" font="vector">&gt;VALUE</text>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="6.35" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="4.826" y2="1.524" width="0.254" layer="94"/>
+<wire x1="4.826" y1="1.524" x2="5.588" y2="1.778" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.334" y2="1.016" width="0.254" layer="94"/>
+<wire x1="5.334" y1="1.016" x2="5.588" y2="1.778" width="0.254" layer="94"/>
+<wire x1="6.096" y1="1.524" x2="6.35" y2="1.27" width="0.254" layer="94"/>
+<wire x1="6.35" y1="1.27" x2="6.604" y2="1.016" width="0.254" layer="94"/>
+<wire x1="6.604" y1="1.016" x2="6.858" y2="1.778" width="0.254" layer="94"/>
+<wire x1="6.858" y1="1.778" x2="6.096" y2="1.524" width="0.254" layer="94"/>
+<pin name="C" x="-5.08" y="-1.27" length="point" rot="R180"/>
+<pin name="A" x="5.08" y="-1.27" length="point"/>
+<wire x1="-3.556" y1="-2.032" x2="-3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.286" x2="-3.302" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="3.302" y1="-2.286" x2="3.556" y2="-2.286" width="0.254" layer="94"/>
+<text x="0" y="3.81" size="0.88" layer="95" font="vector">&gt;NAME</text>
+<text x="0" y="2.54" size="0.88" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3478,14 +3475,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CREATOR" value="Michael Gonzalez"/>
-<attribute name="DIST" value="Nobody"/>
-<attribute name="DISTPN" value="0"/>
-<attribute name="MFR" value="Digikey"/>
-<attribute name="MPN" value="0"/>
-<attribute name="REVIEWER" value=""/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3547,7 +3537,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="L62507CT-ND"/>
 <attribute name="MFR" value="Visual Communications Company - VCC"/>
 <attribute name="MPN" value="CMD17-21VYD/TR8"/>
-<attribute name="REVIEWER" value=""/>
 <attribute name="VALUE" value="2V - 20mA" constant="no"/>
 </technology>
 </technologies>
@@ -4007,17 +3996,17 @@ We'll test it before actually comitting to it</text>
 <segment>
 <pinref part="U$14" gate="G$1" pin="A"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="149.86" y1="-137.16" x2="133.35" y2="-135.89" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-135.89" x2="133.35" y2="-135.89" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="U$13" gate="G$1" pin="A"/>
-<wire x1="133.35" y1="-128.27" x2="149.86" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="-128.27" x2="149.86" y2="-128.27" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED_Y" gate="G$1" pin="A"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="148.59" y1="-173.99" x2="133.35" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="148.59" y1="-172.72" x2="133.35" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFP" class="0">
@@ -4276,8 +4265,8 @@ We'll test it before actually comitting to it</text>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="P$1"/>
-<wire x1="63.5" y1="-35.56" x2="63.5" y2="-40.64" width="0.1524" layer="91" style="longdash"/>
-<label x="63.5" y="-40.64" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
+<wire x1="63.5" y1="-35.56" x2="63.5" y2="-38.1" width="0.1524" layer="91" style="longdash"/>
+<label x="63.5" y="-38.1" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="9"/>
@@ -4733,14 +4722,14 @@ We'll test it before actually comitting to it</text>
 <segment>
 <pinref part="U$13" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="-129.54" x2="161.29" y2="-128.27" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-128.27" x2="161.29" y2="-128.27" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="C"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="-137.16" x2="161.29" y2="-135.89" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-135.89" x2="161.29" y2="-135.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -4755,7 +4744,7 @@ We'll test it before actually comitting to it</text>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="LED_Y" gate="G$1" pin="C"/>
-<wire x1="162.56" y1="-172.72" x2="158.75" y2="-173.99" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-172.72" x2="158.75" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
