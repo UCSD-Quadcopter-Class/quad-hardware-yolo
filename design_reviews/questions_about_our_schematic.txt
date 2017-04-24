@@ -1,0 +1,10 @@
+Meeting Location: Envision Maker Studio
+Meeting Time: Apr 24th, 2:00pm
+
+Why did you take out the capacitor in the motor driver from PWM to ground?
+
+Why you didn't connect pin 12 and 33 (ATMEL RF MICROCONTROLLER) to VCC?
+
+You have an extra RESET button on ht FTDI
+
+We meet in the Makerspace on 4/24/2017 from 2PM

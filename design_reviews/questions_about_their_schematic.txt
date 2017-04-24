@@ -1,0 +1,6 @@
+Meeting Location: Envision Maker Studio
+Meeting Time: Apr 24th, 2:00pm
+
+1. Why is there a resistor between GND and BAT_BND?
+2. Shouldn't TST and CLKI pins on microcontroller be connected to ground?
+3. On the motor driver, why are there two capacitors between VCC and ground with same value?
