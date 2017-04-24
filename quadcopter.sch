@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3696,6 +3696,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="LED_Y" library="quadparts_michael" deviceset="LED" device="CMD17" value="2V - 20mA"/>
 <part name="R17" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-330" value="330"/>
 <part name="GND29" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND30" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3778,7 +3779,7 @@ We'll test it before actually comitting to it</text>
 <instance part="R3" gate="G$1" x="257.81" y="-113.03" rot="R90"/>
 <instance part="GND11" gate="1" x="257.81" y="-102.87" rot="R180"/>
 <instance part="GND12" gate="1" x="255.27" y="-146.05" rot="R90"/>
-<instance part="R6" gate="G$1" x="358.14" y="-200.66"/>
+<instance part="R6" gate="G$1" x="358.14" y="-203.2"/>
 <instance part="R7" gate="G$1" x="363.22" y="-215.9" rot="R270"/>
 <instance part="U$2" gate="G$1" x="365.76" y="-195.58"/>
 <instance part="R4" gate="G$1" x="360.68" y="-160.02"/>
@@ -3801,7 +3802,7 @@ We'll test it before actually comitting to it</text>
 <instance part="R12" gate="G$1" x="33.02" y="-25.4"/>
 <instance part="R13" gate="G$1" x="17.78" y="-30.48" rot="R90"/>
 <instance part="GND17" gate="1" x="17.78" y="-40.64"/>
-<instance part="C9" gate="G$1" x="373.38" y="-182.88"/>
+<instance part="C9" gate="G$1" x="355.6" y="-185.42"/>
 <instance part="C10" gate="G$1" x="365.76" y="-139.7"/>
 <instance part="C11" gate="G$1" x="365.76" y="-88.9"/>
 <instance part="C12" gate="G$1" x="365.76" y="-38.1"/>
@@ -3814,7 +3815,7 @@ We'll test it before actually comitting to it</text>
 <instance part="C5" gate="G$1" x="101.6" y="-44.45"/>
 <instance part="U$8" gate="G$1" x="63.5" y="-33.02" rot="R90"/>
 <instance part="U$9" gate="G$1" x="375.92" y="-109.22" rot="MR180"/>
-<instance part="U$10" gate="G$1" x="370.84" y="-200.66" rot="MR180"/>
+<instance part="U$10" gate="G$1" x="370.84" y="-203.2" rot="MR180"/>
 <instance part="U$11" gate="G$1" x="381" y="-58.42" rot="MR180"/>
 <instance part="U$12" gate="G$1" x="375.92" y="-160.02" rot="MR180"/>
 <instance part="C6" gate="G$1" x="40.64" y="-193.04" rot="R180"/>
@@ -3849,6 +3850,7 @@ We'll test it before actually comitting to it</text>
 <instance part="LED_Y" gate="G$1" x="153.67" y="-173.99" rot="R180"/>
 <instance part="R17" gate="G$1" x="167.64" y="-172.72"/>
 <instance part="GND29" gate="1" x="130.81" y="-172.72" rot="R270"/>
+<instance part="GND30" gate="1" x="355.6" y="-195.58"/>
 </instances>
 <busses>
 </busses>
@@ -4018,6 +4020,11 @@ We'll test it before actually comitting to it</text>
 <pinref part="LED_Y" gate="G$1" pin="A"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="148.59" y1="-173.99" x2="133.35" y2="-172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="-"/>
+<wire x1="355.6" y1="-190.5" x2="355.6" y2="-193.04" width="0.1524" layer="91"/>
+<pinref part="GND30" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="RFP" class="0">
@@ -4229,7 +4236,7 @@ We'll test it before actually comitting to it</text>
 <label x="363.22" y="-220.98" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
 <wire x1="373.38" y1="-220.98" x2="363.22" y2="-220.98" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="S"/>
-<wire x1="373.38" y1="-203.2" x2="373.38" y2="-220.98" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-205.74" x2="373.38" y2="-220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="365.76" y="-147.32" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
@@ -4353,9 +4360,17 @@ We'll test it before actually comitting to it</text>
 <wire x1="27.94" y1="-55.88" x2="30.48" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="373.38" y="-177.8" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
-<wire x1="373.38" y1="-180.34" x2="373.38" y2="-177.8" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="+"/>
+<wire x1="355.6" y1="-182.88" x2="355.6" y2="-180.34" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="V+"/>
+<wire x1="373.38" y1="-190.5" x2="378.46" y2="-190.5" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="-190.5" x2="378.46" y2="-185.42" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="378.46" y1="-185.42" x2="381" y2="-185.42" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="-180.34" x2="373.38" y2="-180.34" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-180.34" x2="373.38" y2="-190.5" width="0.1524" layer="91"/>
+<junction x="373.38" y="-190.5"/>
+<label x="373.38" y="-180.34" size="1.27" layer="95" font="fixed" xref="yes"/>
 </segment>
 </net>
 <net name="FLYBACK4" class="1">
@@ -4380,8 +4395,8 @@ We'll test it before actually comitting to it</text>
 <net name="M4_CTL" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="353.06" y1="-200.66" x2="342.9" y2="-200.66" width="0.1524" layer="91"/>
-<label x="342.9" y="-200.66" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
+<wire x1="353.06" y1="-203.2" x2="342.9" y2="-203.2" width="0.1524" layer="91"/>
+<label x="342.9" y="-203.2" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD5(XCK1)"/>
@@ -4593,9 +4608,9 @@ We'll test it before actually comitting to it</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="363.22" y1="-210.82" x2="363.22" y2="-200.66" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="-200.66" x2="368.3" y2="-200.66" width="0.1524" layer="91"/>
-<junction x="363.22" y="-200.66"/>
+<wire x1="363.22" y1="-210.82" x2="363.22" y2="-203.2" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="-203.2" x2="368.3" y2="-203.2" width="0.1524" layer="91"/>
+<junction x="363.22" y="-203.2"/>
 <pinref part="U$10" gate="G$1" pin="G"/>
 </segment>
 </net>
@@ -4603,7 +4618,7 @@ We'll test it before actually comitting to it</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="V-"/>
 <pinref part="U$10" gate="G$1" pin="D"/>
-<wire x1="373.38" y1="-195.58" x2="373.38" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-195.58" x2="373.38" y2="-200.66" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="-195.58" x2="381" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="373.38" y="-195.58"/>
 <pinref part="D5" gate="G$1" pin="A"/>
@@ -4643,18 +4658,6 @@ We'll test it before actually comitting to it</text>
 <pinref part="U$9" gate="G$1" pin="D"/>
 <wire x1="378.46" y1="-106.68" x2="378.46" y2="-101.6" width="0.1524" layer="91"/>
 <junction x="378.46" y="-101.6"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="C9" gate="G$1" pin="-"/>
-<pinref part="U$2" gate="G$1" pin="V+"/>
-<wire x1="373.38" y1="-187.96" x2="373.38" y2="-190.5" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="-190.5" x2="378.46" y2="-190.5" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="-190.5" x2="378.46" y2="-185.42" width="0.1524" layer="91"/>
-<junction x="373.38" y="-190.5"/>
-<pinref part="D5" gate="G$1" pin="C"/>
-<wire x1="378.46" y1="-185.42" x2="381" y2="-185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
