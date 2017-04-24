@@ -3643,7 +3643,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND14" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND15" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$7" library="quadparts_michael" deviceset="IMU" device=""/>
-<part name="GND16" library="Components" deviceset="GND" device=""/>
+<part name="GND16" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+4" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="R12" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="R13" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
@@ -3666,10 +3666,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$12" library="quadparts_michael" deviceset="N-FET" device=""/>
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
 <part name="C7" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
-<part name="GND19" library="Components" deviceset="GND" device=""/>
-<part name="GND20" library="Components" deviceset="GND" device=""/>
+<part name="GND19" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND20" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
-<part name="GND21" library="Components" deviceset="GND" device=""/>
+<part name="GND21" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="GND22" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C14" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.01UF" value="0.01uF"/>
