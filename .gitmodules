@@ -1,0 +1,3 @@
+[submodule "Adafruit-BMP280-Breakout-PCB"]
+	path = Adafruit-BMP280-Breakout-PCB
+	url = git@github.com:adafruit/Adafruit-BMP280-Breakout-PCB.git
