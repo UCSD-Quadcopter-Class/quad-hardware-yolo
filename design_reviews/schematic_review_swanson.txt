@@ -1,0 +1,22 @@
+MOTOR_GND should be BAT_GND
+
+You seem to be missing the input cap on your voltage regulator.  It should be connected to BAT_GND.  The input side ground of the regulator sohuld also be BAT_GND.
+
+You are missing the jumper between the positive battery terminal and BAT_GND.
+
+The DTR line should not be connected to reset on the second serial port.
+
+You can get rid of the pulldowns on your buttons by relying on the builtin pullup/pulldown resistors in the ucontroller.  I forget whether they are pull up or pull down.  Check the docs or talk to me.
+
+You can connect AREF directly to 3V, and you should.  Otherwise, your bat sense will not work.
+
+There's not much point in keeping the filter Resistor on the motor controller if you are going to  get rid of the filter cap.
+
+you don't need the pullup resistors on the inputs to the IMU.  You can just hook them to 3V.
+
+Missing SDA/SCL pullups?
+
+you are missing the crystal.  You need that badly.  The redboard has two, you just need one.
+
+Attributes are not set on your buttons.
+ 
