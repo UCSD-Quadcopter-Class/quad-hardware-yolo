@@ -4142,6 +4142,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="R18" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="P+12" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="P+13" library="quadparts_prebuilt" deviceset="VCC" device=""/>
+<part name="J8" library="Components" deviceset="HEADER-0.1IN-2POS" device="-FEMALE"/>
+<part name="GND36" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4291,7 +4293,7 @@ We'll test it before actually comitting to it</text>
 <instance part="GND29" gate="1" x="142.24" y="-175.26" rot="R270"/>
 <instance part="GND30" gate="1" x="355.6" y="-195.58"/>
 <instance part="P+10" gate="VCC" x="256.54" y="-102.87"/>
-<instance part="C16" gate="G$1" x="60.96" y="-26.67" rot="R90"/>
+<instance part="C16" gate="G$1" x="34.29" y="-15.24" rot="R270"/>
 <instance part="C17" gate="G$1" x="60.96" y="-54.61" rot="R270"/>
 <instance part="GND11" gate="1" x="68.58" y="-54.61" rot="R90"/>
 <instance part="C18" gate="G$1" x="354.33" y="-60.96"/>
@@ -4321,6 +4323,8 @@ We'll test it before actually comitting to it</text>
 <instance part="R18" gate="G$1" x="101.6" y="-227.33" rot="R180"/>
 <instance part="P+12" gate="VCC" x="90.17" y="-234.95" rot="R180"/>
 <instance part="P+13" gate="VCC" x="106.68" y="-232.41" rot="R180"/>
+<instance part="J8" gate="G$1" x="55.88" y="-12.7" rot="R180"/>
+<instance part="GND36" gate="1" x="22.86" y="-15.24" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -4400,9 +4404,6 @@ We'll test it before actually comitting to it</text>
 <wire x1="63.5" y1="-34.29" x2="60.96" y2="-34.29" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-36.83" x2="63.5" y2="-34.29" width="0.1524" layer="91" style="longdash"/>
 <junction x="63.5" y="-34.29"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="-26.67" x2="66.04" y2="-34.29" width="0.1524" layer="91"/>
-<junction x="66.04" y="-34.29"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -4520,6 +4521,11 @@ We'll test it before actually comitting to it</text>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="35.56" y1="-157.48" x2="39.37" y2="-157.48" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="2"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+<wire x1="29.21" y1="-15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFP" class="0">
@@ -4914,17 +4920,16 @@ We'll test it before actually comitting to it</text>
 <wire x1="27.94" y1="-59.69" x2="30.48" y2="-59.69" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="-29.21" x2="40.64" y2="-29.21" width="0.1524" layer="91" style="longdash"/>
-<pinref part="BATT1" gate="G$1" pin="P"/>
-<wire x1="48.26" y1="-34.29" x2="45.72" y2="-34.29" width="0.1524" layer="91"/>
-<junction x="40.64" y="-34.29"/>
-<wire x1="45.72" y1="-34.29" x2="40.64" y2="-34.29" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-34.29" x2="40.64" y2="-29.21" width="0.1524" layer="91" style="longdash"/>
 <wire x1="40.64" y1="-34.29" x2="30.48" y2="-34.29" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-34.29" x2="30.48" y2="-41.91" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-34.29" x2="45.72" y2="-26.67" width="0.1524" layer="91"/>
-<junction x="45.72" y="-34.29"/>
-<wire x1="45.72" y1="-26.67" x2="58.42" y2="-26.67" width="0.1524" layer="91"/>
+<pinref part="J8" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-15.24" x2="40.64" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-15.24" x2="40.64" y2="-29.21" width="0.1524" layer="91"/>
+<junction x="40.64" y="-29.21"/>
 <pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="-15.24" x2="36.83" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="40.64" y="-15.24"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="+"/>
@@ -5363,6 +5368,14 @@ We'll test it before actually comitting to it</text>
 <pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="-162.56" x2="44.45" y2="-162.56" width="0.1524" layer="91"/>
 <label x="44.45" y="-162.56" size="1.27" layer="95" font="fixed" xref="yes"/>
+</segment>
+</net>
+<net name="N$10" class="1">
+<segment>
+<pinref part="BATT1" gate="G$1" pin="P"/>
+<wire x1="48.26" y1="-34.29" x2="45.72" y2="-34.29" width="0.1524" layer="91"/>
+<pinref part="J8" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="-34.29" x2="45.72" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
