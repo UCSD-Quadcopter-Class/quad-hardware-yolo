@@ -4760,7 +4760,7 @@ We'll test it before actually comitting to it</text>
 <label x="100.33" y="-40.64" size="1.778" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="MOTOR_GND" class="1">
+<net name="BAT_GND" class="1">
 <segment>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="351.79" y1="-210.82" x2="351.79" y2="-217.17" width="0.1524" layer="91"/>
