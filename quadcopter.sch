@@ -2543,13 +2543,15 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <rectangle x1="1.961875" y1="-1.075" x2="2.338125" y2="0.645" layer="29" rot="R90"/>
 <rectangle x1="1.961875" y1="-0.645" x2="2.338125" y2="1.075" layer="29" rot="R90"/>
 <rectangle x1="1.961875" y1="-0.215" x2="2.338125" y2="1.505" layer="29" rot="R90"/>
+<rectangle x1="-2.63375" y1="-2.9025" x2="3.38625" y2="2.6875" layer="40"/>
+<rectangle x1="-2.63375" y1="-2.9025" x2="3.38625" y2="2.6875" layer="42"/>
 </package>
 <package name="NET_BRIDGE">
 <smd name="P$1" x="-0.5" y="0" dx="1.27" dy="0.635" layer="1" rot="R270" stop="no"/>
 <smd name="P$2" x="0.5" y="0" dx="1.27" dy="0.635" layer="1" rot="R90" stop="no"/>
 <wire x1="-0.5" y1="0" x2="0.5" y2="0" width="1" layer="1"/>
 <text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
-<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="39"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="39"/>
 </package>
 <package name="N_FET_SI2302CDS-T1-E3CT-ND">
 <smd name="D" x="1.346" y="0.25" dx="2.9" dy="3.05" layer="1" rot="R270"/>
@@ -2821,8 +2823,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <package name="HDRV2W63P254_2X1_508X254H838_HS">
 <description>Header, Vertical, 2.54 mm pitch; 0.635 mm lead width, 2 pins, 1 row, 2 pins per row, 5.08 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
 <wire x1="-0.4233" y1="1.27" x2="3.81" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-0.885" y1="-3.425" x2="-0.885" y2="9.14" width="0.05" layer="39"/>
-<wire x1="-0.885" y1="9.14" x2="3.425" y2="9.14" width="0.05" layer="39"/>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0.4233" width="0.12" layer="51"/>
 <wire x1="-1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.12" layer="21"/>
 <wire x1="-1.27" y1="0.4233" x2="-0.4233" y2="1.27" width="0.12" layer="51"/>
@@ -2924,16 +2924,12 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="1.27" y="-2.54" size="1.778" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="1.27" y="-2.54" size="2" layer="51" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="2.54" y="1.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN2</text>
-<wire x1="3.425" y1="-3.425" x2="-0.885" y2="-3.425" width="0.05" layer="39"/>
-<wire x1="3.425" y1="9.14" x2="3.425" y2="-3.425" width="0.05" layer="39"/>
 <wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
 <wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.12" layer="21"/>
 <wire x1="3.81" y1="1.27" x2="-0.4233" y2="1.27" width="0.12" layer="21"/>
 <wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.12" layer="51"/>
 <pad name="1" x="0" y="0" drill="1.1" diameter="1.65" shape="square" stop="no" first="yes"/>
 <pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65" stop="no"/>
-<rectangle x1="-0.9" y1="-3.5" x2="3.4" y2="9.2" layer="102"/>
-<rectangle x1="-1.9" y1="-3.6" x2="4.4" y2="-1.4" layer="102"/>
 </package>
 <package name="SCREW-TERMINAL-1X2-2.54MM">
 <description>Header, Vertical, 2.54 mm pitch; 0.635 mm lead width, 4 pins, 1 row, 4 pins per row, 10.16 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -3251,8 +3247,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <package name="HDRV3W63P254_3X1_762X254H838_HS">
 <description>Header, Vertical, 2.54 mm pitch; 0.635 mm lead width, 3 pins, 1 row, 3 pins per row, 7.62 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
 <wire x1="-0.4233" y1="1.27" x2="6.35" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-0.885" y1="-3.425" x2="-0.885" y2="9.14" width="0.05" layer="39"/>
-<wire x1="-0.885" y1="9.14" x2="5.965" y2="9.14" width="0.05" layer="39"/>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0.4233" width="0.12" layer="51"/>
 <wire x1="-1.27" y1="-1.27" x2="6.35" y2="-1.27" width="0.12" layer="21"/>
 <wire x1="-1.27" y1="0.4233" x2="-0.4233" y2="1.27" width="0.12" layer="51"/>
@@ -3431,8 +3425,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="2.54" y="-2.54" size="1.778" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="2.54" y="1.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN2</text>
 <text x="5.08" y="1.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN3</text>
-<wire x1="5.965" y1="-3.425" x2="-0.885" y2="-3.425" width="0.05" layer="39"/>
-<wire x1="5.965" y1="9.14" x2="5.965" y2="-3.425" width="0.05" layer="39"/>
 <wire x1="6.35" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
 <wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.12" layer="21"/>
 <wire x1="6.35" y1="1.27" x2="-0.4233" y2="1.27" width="0.12" layer="21"/>
@@ -3440,15 +3432,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pad name="1" x="0" y="0" drill="1.1" diameter="1.65" shape="square" stop="no" first="yes"/>
 <pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65" stop="no"/>
 <pad name="3" x="5.08" y="0" drill="1.1" diameter="1.65" stop="no"/>
-<rectangle x1="-0.9" y1="-3.5" x2="6" y2="9.1" layer="102"/>
 </package>
 <package name="HDRV5W63P254_5X1_1270X254H838_HS">
 <description>Header, Vertical, 2.54 mm pitch; 0.635 mm lead width, 5 pins, 1 row, 5 pins per row, 12.70 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
 <wire x1="-0.4233" y1="1.27" x2="11.43" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-0.885" y1="-3.425" x2="-0.885" y2="9.14" width="0.05" layer="39"/>
-<wire x1="-0.885" y1="9.14" x2="11.045" y2="9.14" width="0.05" layer="39"/>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0.4233" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="-1.27" x2="11.43" y2="-1.27" width="0.12" layer="21"/>
 <wire x1="-1.27" y1="0.4233" x2="-0.4233" y2="1.27" width="0.12" layer="51"/>
 <wire x1="-1.27" y1="0.4233" x2="-1.27" y2="-1.27" width="0.12" layer="21"/>
 <wire x1="-1.27" y1="0.4233" x2="-1.27" y2="1.27" width="0.01" layer="51"/>
@@ -3774,8 +3762,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </polygon>
 <wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
 <text x="10.16" y="1.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN5</text>
-<wire x1="11.045" y1="-3.425" x2="-0.885" y2="-3.425" width="0.05" layer="39"/>
-<wire x1="11.045" y1="9.14" x2="11.045" y2="-3.425" width="0.05" layer="39"/>
 <wire x1="11.43" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
 <wire x1="11.43" y1="-1.27" x2="11.43" y2="1.27" width="0.12" layer="21"/>
 <wire x1="11.43" y1="1.27" x2="-0.4233" y2="1.27" width="0.12" layer="21"/>
@@ -3790,7 +3776,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pad name="3" x="5.08" y="0" drill="1.1" diameter="1.65" stop="no"/>
 <pad name="4" x="7.62" y="0" drill="1.1" diameter="1.65" stop="no"/>
 <pad name="5" x="10.16" y="0" drill="1.1" diameter="1.65" stop="no"/>
-<rectangle x1="-0.9" y1="-3.4" x2="11.1" y2="9.2" layer="102"/>
 </package>
 </packages>
 <symbols>
@@ -4014,6 +3999,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="HighAmps" width="0.762" drill="0">
+</class>
+<class number="2" name="RFSIG" width="0.4572" drill="0">
 </class>
 </classes>
 <parts>

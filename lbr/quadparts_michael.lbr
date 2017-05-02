@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.26875" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -81,7 +81,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
@@ -577,6 +577,8 @@
 <rectangle x1="1.961875" y1="-1.075" x2="2.338125" y2="0.645" layer="29" rot="R90"/>
 <rectangle x1="1.961875" y1="-0.645" x2="2.338125" y2="1.075" layer="29" rot="R90"/>
 <rectangle x1="1.961875" y1="-0.215" x2="2.338125" y2="1.505" layer="29" rot="R90"/>
+<rectangle x1="-2.63375" y1="-2.9025" x2="3.38625" y2="2.6875" layer="40"/>
+<rectangle x1="-2.63375" y1="-2.9025" x2="3.38625" y2="2.6875" layer="42"/>
 </package>
 <package name="LED_LTST-C170EKT">
 <smd name="A" x="1.1" y="0" dx="1.2" dy="1.2" layer="1"/>
@@ -596,7 +598,7 @@
 <smd name="P$2" x="0.5" y="0" dx="1.27" dy="0.635" layer="1" rot="R90" stop="no"/>
 <wire x1="-0.5" y1="0" x2="0.5" y2="0" width="1" layer="1"/>
 <text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
-<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="39"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="39"/>
 </package>
 <package name="LED_CMD17">
 </package>
