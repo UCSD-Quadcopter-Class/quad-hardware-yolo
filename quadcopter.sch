@@ -4982,9 +4982,9 @@ We'll test it before actually comitting to it</text>
 <wire x1="345.44" y1="-219.71" x2="327.66" y2="-219.71" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PD5(XCK1)"/>
-<wire x1="187.96" y1="-152.4" x2="185.42" y2="-152.4" width="0.1524" layer="91"/>
-<label x="185.42" y="-152.4" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PG5(OC0B)"/>
+<wire x1="187.96" y1="-198.12" x2="182.88" y2="-198.12" width="0.1524" layer="91" style="longdash"/>
+<label x="182.88" y="-198.12" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5041,9 +5041,9 @@ We'll test it before actually comitting to it</text>
 <wire x1="337.82" y1="-119.38" x2="337.82" y2="-120.65" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PG5(OC0B)"/>
-<wire x1="187.96" y1="-198.12" x2="185.42" y2="-198.12" width="0.1524" layer="91" style="longdash"/>
-<label x="185.42" y="-198.12" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="PD5(XCK1)"/>
+<wire x1="187.96" y1="-152.4" x2="185.42" y2="-152.4" width="0.1524" layer="91"/>
+<label x="185.42" y="-152.4" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
