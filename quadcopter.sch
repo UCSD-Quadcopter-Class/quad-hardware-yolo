@@ -2545,6 +2545,12 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <rectangle x1="1.961875" y1="-0.215" x2="2.338125" y2="1.505" layer="29" rot="R90"/>
 <rectangle x1="-2.63375" y1="-2.9025" x2="3.38625" y2="2.6875" layer="40"/>
 <rectangle x1="-2.63375" y1="-2.9025" x2="3.38625" y2="2.6875" layer="42"/>
+<polygon width="0.127" layer="39">
+<vertex x="-1.7" y="1.5"/>
+<vertex x="1.7" y="1.5"/>
+<vertex x="1.7" y="-1.4"/>
+<vertex x="-1.7" y="-1.4"/>
+</polygon>
 </package>
 <package name="NET_BRIDGE">
 <smd name="P$1" x="-0.5" y="0" dx="1.27" dy="0.635" layer="1" rot="R270" stop="no"/>
@@ -4984,7 +4990,7 @@ We'll test it before actually comitting to it</text>
 <wire x1="373.38" y1="-160.02" x2="368.3" y2="-160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="M3_CTL" class="1">
+<net name="M3_CTL" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="355.6" y1="-160.02" x2="354.33" y2="-160.02" width="0.1524" layer="91"/>
@@ -5105,7 +5111,7 @@ We'll test it before actually comitting to it</text>
 <label x="44.45" y="-165.1" size="1.27" layer="95" font="fixed" xref="yes"/>
 </segment>
 </net>
-<net name="BAT_SENSE" class="1">
+<net name="BAT_SENSE" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="R13" gate="G$1" pin="2"/>
