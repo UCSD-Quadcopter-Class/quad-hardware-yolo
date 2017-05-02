@@ -4534,7 +4534,7 @@ We'll test it before actually comitting to it</text>
 <wire x1="284.48" y1="-139.7" x2="284.48" y2="-147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="BALUN_CAP1" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="GND@2"/>
 <pinref part="C1" gate="G$1" pin="2"/>
