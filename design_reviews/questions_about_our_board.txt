@@ -1,0 +1,4 @@
+Meeting Location: NVSL (CSE 2209)
+Meeting Time: May 3rd, 7:00pm
+
+ - The vias should go all the way around all the antenna components
