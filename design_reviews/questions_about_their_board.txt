@@ -1,0 +1,24 @@
+Meeting Location: NVSL (CSE 2209)
+Meeting Time: May 3rd, 7:00pm
+
+No traces/vias should be under the IMU
+The bounding box surrounding the design is larger than 30 in^2
+
+Balun's connections to rfp and rfn are not the same length. 
+The length of the traces connecting rfp/rfn to the balun should be shorttened a lot
+The Faraday cage should not surround attenna - only the analog circuitry between it and the micro controller
+The attenna circuit should be isolated from the power pours. A ground pour should surround it on layers 1-2
+the trace between the balun and the antenna should be extra-thick
+
+t-restrict/b-restrict/t-keepout/b-keepout seem to be largely unused
+
+*-restrict will prevent the autorouter from entering the area defined by region drawn. 
+^^^ This is useful to prevent the auto router from harming your attenna circuit
+
+*-keepout will let DRC what things shouldn't touch. It's useful for enforcing when things should not overlap
+
+The 3V and VBat pours should be isolated by empty space so they don't short
+The BatGND pour and GND pour can be isolated similiarally - although they should converage at some choke point
+The VBat pours should cover the motor pads
+
+
