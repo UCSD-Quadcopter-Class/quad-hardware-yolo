@@ -1,0 +1,25 @@
+commit b1d935d5b287e0410df0b64effebc5e929b484d4
+
+What are J4/J6, etc for?
+
+routing on your oscillator should look more like the layout on the redboard
+
+pours for radio driver need to extend under the balun and caps,
+
+Your ground pours around the antenna driver aren't right.  They don't seem to be there at all.
+
+What is J7?
+
+Why the extra buttons?
+
+you have alot of ground on your top metal layer.  not sure why you aren't connecting to the ground plane.
+
+Motor control lines don't need to be high-current.
+
+I would rename things with names U$12.  It's bad style.
+
+IT looks like you have a pour connecting BAT_GND and GND.  It should just the be the net bridge.
+
+The outline of your pours is sloppy! :-)
+
+
