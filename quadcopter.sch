@@ -259,6 +259,7 @@
 <wire x1="6.5" y1="6.4" x2="6.5" y2="-6.4" width="0.127" layer="39"/>
 <wire x1="6.5" y1="-6.4" x2="-6.4" y2="-6.4" width="0.127" layer="39"/>
 <wire x1="-6.4" y1="-6.4" x2="-6.4" y2="6.4" width="0.127" layer="39"/>
+<smd name="65" x="0" y="0" dx="7.15" dy="7.15" layer="1"/>
 </package>
 <package name="BALUN">
 <circle x="-0.76" y="-0.13" radius="0.0447" width="0.127" layer="21"/>
@@ -1481,10 +1482,10 @@
 <symbol name="ATMEGA128RFA1">
 <description>&lt;h3&gt;ATmega128RFA1&lt;/h3&gt;
 8-bit Microcontroller with Low Power 2.4GHz Transceiver for ZigBee and IEEE 802.15.4</description>
-<wire x1="-25.4" y1="-43.18" x2="25.4" y2="-43.18" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="43.18" x2="-25.4" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-45.72" x2="25.4" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="43.18" x2="-25.4" y2="-45.72" width="0.254" layer="94"/>
 <text x="-25.4" y="43.688" size="1.778" layer="95">&gt;NAME</text>
-<wire x1="25.4" y1="-43.18" x2="25.4" y2="43.18" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-45.72" x2="25.4" y2="43.18" width="0.254" layer="94"/>
 <wire x1="25.4" y1="43.18" x2="-25.4" y2="43.18" width="0.254" layer="94"/>
 <pin name="AREF" x="-27.94" y="-10.16" length="short"/>
 <pin name="AVDD" x="-27.94" y="7.62" length="short"/>
@@ -1541,6 +1542,7 @@
 <pin name="TST" x="-27.94" y="27.94" length="short"/>
 <pin name="XTAL1" x="-27.94" y="0" length="short"/>
 <pin name="XTAL2" x="-27.94" y="-2.54" length="short"/>
+<pin name="PADDLE" x="27.94" y="-43.18" length="short" rot="R180"/>
 </symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
@@ -1791,6 +1793,7 @@
 <connect gate="G$1" pin="DVDD" pad="21 22"/>
 <connect gate="G$1" pin="DVSS" pad="20 24 35 45 55"/>
 <connect gate="G$1" pin="EVDD" pad="59"/>
+<connect gate="G$1" pin="PADDLE" pad="65"/>
 <connect gate="G$1" pin="PB0(SSN/PCINT0)" pad="36"/>
 <connect gate="G$1" pin="PB1(SCK/PCINT1)" pad="37"/>
 <connect gate="G$1" pin="PB2(MOSI/PDI/PCINT2)" pad="38"/>
@@ -4324,11 +4327,19 @@ We'll test it before actually comitting to it</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="248.92" y1="-203.2" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="DVSS"/>
-<wire x1="243.84" y1="-195.58" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-195.58" x2="246.38" y2="-195.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="AVSS"/>
+<wire x1="246.38" y1="-195.58" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="-193.04" x2="248.92" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="-193.04" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="248.92" y="-195.58"/>
+<pinref part="U1" gate="G$1" pin="PADDLE"/>
+<wire x1="187.96" y1="-200.66" x2="187.96" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-208.28" x2="243.84" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-208.28" x2="243.84" y2="-200.66" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-200.66" x2="246.38" y2="-200.66" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-200.66" x2="246.38" y2="-195.58" width="0.1524" layer="91"/>
+<junction x="246.38" y="-195.58"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
