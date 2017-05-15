@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
@@ -47,7 +47,7 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
-<layer number="40" name="bKeepout" color="5" fill="1" visible="no" active="no"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="no"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -259,6 +259,7 @@
 <wire x1="6.5" y1="6.4" x2="6.5" y2="-6.4" width="0.127" layer="39"/>
 <wire x1="6.5" y1="-6.4" x2="-6.4" y2="-6.4" width="0.127" layer="39"/>
 <wire x1="-6.4" y1="-6.4" x2="-6.4" y2="6.4" width="0.127" layer="39"/>
+<smd name="65" x="0" y="0" dx="7.15" dy="7.15" layer="1"/>
 </package>
 <package name="BALUN">
 <circle x="-0.76" y="-0.13" radius="0.0447" width="0.127" layer="21"/>
@@ -1365,8 +1366,9 @@
 <wire x1="1.42" y1="0.9" x2="1.42" y2="-0.9" width="0.12" layer="51"/>
 <wire x1="2.54" y1="-1.15" x2="-2.54" y2="-1.15" width="0.05" layer="39"/>
 <wire x1="2.54" y1="1.15" x2="2.54" y2="-1.15" width="0.05" layer="39"/>
-<smd name="A" x="1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="C" x="-1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
+<smd name="A" x="1.9" y="0" dx="2.2" dy="1.2" layer="1" roundness="50" stop="no" cream="no"/>
+<smd name="C" x="-1.9" y="0" dx="2.2" dy="1.2" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
+<dimension x1="1.4" y1="-1.15" x2="-1.4" y2="-1.15" x3="0" y3="-2" textsize="1.27" layer="48"/>
 </package>
 <package name="TE_FSM8JSMA_HS">
 <description>Switch, Tactile; 4 pin, 6.00 mm L X 6.00 mm W X 9.50 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -1480,10 +1482,10 @@
 <symbol name="ATMEGA128RFA1">
 <description>&lt;h3&gt;ATmega128RFA1&lt;/h3&gt;
 8-bit Microcontroller with Low Power 2.4GHz Transceiver for ZigBee and IEEE 802.15.4</description>
-<wire x1="-25.4" y1="-43.18" x2="25.4" y2="-43.18" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="43.18" x2="-25.4" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-45.72" x2="25.4" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="43.18" x2="-25.4" y2="-45.72" width="0.254" layer="94"/>
 <text x="-25.4" y="43.688" size="1.778" layer="95">&gt;NAME</text>
-<wire x1="25.4" y1="-43.18" x2="25.4" y2="43.18" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-45.72" x2="25.4" y2="43.18" width="0.254" layer="94"/>
 <wire x1="25.4" y1="43.18" x2="-25.4" y2="43.18" width="0.254" layer="94"/>
 <pin name="AREF" x="-27.94" y="-10.16" length="short"/>
 <pin name="AVDD" x="-27.94" y="7.62" length="short"/>
@@ -1540,6 +1542,7 @@
 <pin name="TST" x="-27.94" y="27.94" length="short"/>
 <pin name="XTAL1" x="-27.94" y="0" length="short"/>
 <pin name="XTAL2" x="-27.94" y="-2.54" length="short"/>
+<pin name="PADDLE" x="27.94" y="-43.18" length="short" rot="R180"/>
 </symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
@@ -1790,6 +1793,7 @@
 <connect gate="G$1" pin="DVDD" pad="21 22"/>
 <connect gate="G$1" pin="DVSS" pad="20 24 35 45 55"/>
 <connect gate="G$1" pin="EVDD" pad="59"/>
+<connect gate="G$1" pin="PADDLE" pad="65"/>
 <connect gate="G$1" pin="PB0(SSN/PCINT0)" pad="36"/>
 <connect gate="G$1" pin="PB1(SCK/PCINT1)" pad="37"/>
 <connect gate="G$1" pin="PB2(MOSI/PDI/PCINT2)" pad="38"/>
@@ -4054,7 +4058,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$6" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device=""/>
 <part name="GND14" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND15" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="U$7" library="quadparts_michael" deviceset="IMU" device=""/>
+<part name="IMU" library="quadparts_michael" deviceset="IMU" device=""/>
 <part name="GND16" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+4" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="R12" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
@@ -4107,10 +4111,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="GND11" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="C18" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C19" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C20" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C21" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="C18" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C19" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C20" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C21" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="Y1" library="quadparts_prebuilt" deviceset="CRYSTAL" device="5X3"/>
 <part name="C22" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
 <part name="C23" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
@@ -4135,7 +4139,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="P+12" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="P+13" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="J8" library="Components" deviceset="HEADER-0.1IN-2POS" device="-FEMALE"/>
-<part name="GND36" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4234,7 +4237,7 @@ We'll test it before actually comitting to it</text>
 <instance part="U$6" gate="G$1" x="33.02" y="-62.23"/>
 <instance part="GND14" gate="1" x="25.4" y="-54.61" rot="R270"/>
 <instance part="GND15" gate="1" x="68.58" y="-34.29" rot="R90"/>
-<instance part="U$7" gate="G$1" x="62.23" y="-213.36"/>
+<instance part="IMU" gate="G$1" x="62.23" y="-213.36"/>
 <instance part="GND16" gate="1" x="44.45" y="-200.66" rot="R270"/>
 <instance part="P+4" gate="VCC" x="34.29" y="-203.2" rot="R90"/>
 <instance part="R12" gate="G$1" x="33.02" y="-29.21"/>
@@ -4315,7 +4318,6 @@ We'll test it before actually comitting to it</text>
 <instance part="P+12" gate="VCC" x="90.17" y="-234.95" rot="R180"/>
 <instance part="P+13" gate="VCC" x="106.68" y="-232.41" rot="R180"/>
 <instance part="J8" gate="G$1" x="55.88" y="-12.7" rot="R180"/>
-<instance part="GND36" gate="1" x="22.86" y="-15.24" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -4325,11 +4327,19 @@ We'll test it before actually comitting to it</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="248.92" y1="-203.2" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="DVSS"/>
-<wire x1="243.84" y1="-195.58" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-195.58" x2="246.38" y2="-195.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="AVSS"/>
+<wire x1="246.38" y1="-195.58" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="-193.04" x2="248.92" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="-193.04" x2="248.92" y2="-195.58" width="0.1524" layer="91"/>
 <junction x="248.92" y="-195.58"/>
+<pinref part="U1" gate="G$1" pin="PADDLE"/>
+<wire x1="187.96" y1="-200.66" x2="187.96" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-208.28" x2="243.84" y2="-208.28" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-208.28" x2="243.84" y2="-200.66" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-200.66" x2="246.38" y2="-200.66" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-200.66" x2="246.38" y2="-195.58" width="0.1524" layer="91"/>
+<junction x="246.38" y="-195.58"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -4399,7 +4409,7 @@ We'll test it before actually comitting to it</text>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="46.99" y1="-200.66" x2="49.53" y2="-200.66" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="GND"/>
+<pinref part="IMU" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -4439,7 +4449,7 @@ We'll test it before actually comitting to it</text>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="U$7" gate="G$1" pin="SDO_M"/>
+<pinref part="IMU" gate="G$1" pin="SDO_M"/>
 <wire x1="77.47" y1="-218.44" x2="74.93" y2="-218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4507,11 +4517,6 @@ We'll test it before actually comitting to it</text>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="35.56" y1="-157.48" x2="39.37" y2="-157.48" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C16" gate="G$1" pin="2"/>
-<pinref part="GND36" gate="1" pin="GND"/>
-<wire x1="29.21" y1="-15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RFP" class="0">
@@ -4584,13 +4589,13 @@ We'll test it before actually comitting to it</text>
 <pinref part="C17" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="VDD"/>
+<pinref part="IMU" gate="G$1" pin="VDD"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="49.53" y1="-203.2" x2="44.45" y2="-203.2" width="0.1524" layer="91"/>
 <wire x1="39.37" y1="-203.2" x2="36.83" y2="-203.2" width="0.1524" layer="91"/>
 <wire x1="44.45" y1="-203.2" x2="44.45" y2="-205.74" width="0.1524" layer="91"/>
 <junction x="44.45" y="-203.2"/>
-<pinref part="U$7" gate="G$1" pin="VDDIO"/>
+<pinref part="IMU" gate="G$1" pin="VDDIO"/>
 <wire x1="44.45" y1="-205.74" x2="49.53" y2="-205.74" width="0.1524" layer="91"/>
 <wire x1="44.45" y1="-203.2" x2="39.37" y2="-203.2" width="0.1524" layer="91"/>
 <wire x1="39.37" y1="-203.2" x2="39.37" y2="-198.12" width="0.1524" layer="91"/>
@@ -4613,15 +4618,15 @@ We'll test it before actually comitting to it</text>
 <segment>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="92.71" y1="-215.9" x2="92.71" y2="-220.98" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="SDO_A/G"/>
+<pinref part="IMU" gate="G$1" pin="SDO_A/G"/>
 <wire x1="92.71" y1="-220.98" x2="74.93" y2="-220.98" width="0.1524" layer="91"/>
 <junction x="92.71" y="-215.9"/>
-<pinref part="U$7" gate="G$1" pin="CS_A/G"/>
+<pinref part="IMU" gate="G$1" pin="CS_A/G"/>
 <wire x1="92.71" y1="-215.9" x2="74.93" y2="-215.9" width="0.1524" layer="91"/>
 <wire x1="92.71" y1="-215.9" x2="92.71" y2="-213.36" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="CS_M"/>
+<pinref part="IMU" gate="G$1" pin="CS_M"/>
 <wire x1="92.71" y1="-213.36" x2="74.93" y2="-213.36" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="DEN_A/G"/>
+<pinref part="IMU" gate="G$1" pin="DEN_A/G"/>
 <wire x1="74.93" y1="-200.66" x2="92.71" y2="-200.66" width="0.1524" layer="91"/>
 <wire x1="92.71" y1="-200.66" x2="92.71" y2="-213.36" width="0.1524" layer="91"/>
 <junction x="92.71" y="-213.36"/>
@@ -4849,8 +4854,13 @@ We'll test it before actually comitting to it</text>
 <wire x1="356.87" y1="-190.5" x2="356.87" y2="-193.04" width="0.1524" layer="91"/>
 <label x="356.87" y="-193.04" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="29.21" y1="-15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
+<label x="25.4" y="-15.24" size="1.27" layer="95" font="fixed" rot="R180" xref="yes"/>
+</segment>
 </net>
-<net name="V_BAT" class="1">
+<net name="VBAT" class="1">
 <segment>
 <wire x1="367.03" y1="-129.54" x2="367.03" y2="-132.08" width="0.1524" layer="91"/>
 <wire x1="367.03" y1="-132.08" x2="387.35" y2="-132.08" width="0.1524" layer="91"/>
@@ -5000,9 +5010,11 @@ We'll test it before actually comitting to it</text>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PD4(ICP1)"/>
-<wire x1="187.96" y1="-149.86" x2="185.42" y2="-149.86" width="0.1524" layer="91"/>
-<label x="185.42" y="-149.86" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
+<label x="185.42" y="-170.18" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PE3(OC3A/AIN1)"/>
+<wire x1="185.42" y1="-170.18" x2="187.96" y2="-170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -5030,9 +5042,11 @@ We'll test it before actually comitting to it</text>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PD5(XCK1)"/>
-<wire x1="187.96" y1="-152.4" x2="185.42" y2="-152.4" width="0.1524" layer="91"/>
-<label x="185.42" y="-152.4" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
+<label x="185.42" y="-172.72" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PE4(OC3B/INT4)"/>
+<wire x1="187.96" y1="-172.72" x2="185.42" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -5072,7 +5086,7 @@ We'll test it before actually comitting to it</text>
 <label x="185.42" y="-139.7" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="SCL/SPC"/>
+<pinref part="IMU" gate="G$1" pin="SCL/SPC"/>
 <wire x1="74.93" y1="-226.06" x2="80.01" y2="-226.06" width="0.1524" layer="91"/>
 <label x="82.55" y="-226.06" size="1.27" layer="95" font="fixed" xref="yes"/>
 <wire x1="80.01" y1="-226.06" x2="82.55" y2="-226.06" width="0.1524" layer="91"/>
@@ -5093,7 +5107,7 @@ We'll test it before actually comitting to it</text>
 <label x="185.42" y="-142.24" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="SDA/SDA/SDO"/>
+<pinref part="IMU" gate="G$1" pin="SDA/SDA/SDO"/>
 <wire x1="74.93" y1="-223.52" x2="96.52" y2="-223.52" width="0.1524" layer="91"/>
 <label x="104.14" y="-223.52" size="1.27" layer="95" font="fixed" xref="yes"/>
 <wire x1="96.52" y1="-223.52" x2="104.14" y2="-223.52" width="0.1524" layer="91"/>
@@ -5157,13 +5171,13 @@ We'll test it before actually comitting to it</text>
 <net name="N$9" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="U$7" gate="G$1" pin="C1"/>
+<pinref part="IMU" gate="G$1" pin="C1"/>
 <wire x1="44.45" y1="-210.82" x2="49.53" y2="-210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$7" gate="G$1" pin="CAP"/>
+<pinref part="IMU" gate="G$1" pin="CAP"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="49.53" y1="-208.28" x2="31.75" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="-208.28" x2="31.75" y2="-210.82" width="0.1524" layer="91"/>
