@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1365,8 +1365,9 @@
 <wire x1="1.42" y1="0.9" x2="1.42" y2="-0.9" width="0.12" layer="51"/>
 <wire x1="2.54" y1="-1.15" x2="-2.54" y2="-1.15" width="0.05" layer="39"/>
 <wire x1="2.54" y1="1.15" x2="2.54" y2="-1.15" width="0.05" layer="39"/>
-<smd name="A" x="1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="C" x="-1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
+<smd name="A" x="1.9" y="0" dx="2.2" dy="1.2" layer="1" roundness="50" stop="no" cream="no"/>
+<smd name="C" x="-1.9" y="0" dx="2.2" dy="1.2" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
+<dimension x1="1.4" y1="-1.15" x2="-1.4" y2="-1.15" x3="0" y3="-2" textsize="1.27" layer="48"/>
 </package>
 <package name="TE_FSM8JSMA_HS">
 <description>Switch, Tactile; 4 pin, 6.00 mm L X 6.00 mm W X 9.50 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
